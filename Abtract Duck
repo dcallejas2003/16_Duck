@@ -1,0 +1,105 @@
+package service;
+
+@lombok.ToString
+public abstract class Duck {
+    public void quack() {
+        System.out.println("El pato hace QUACK");
+    }
+
+    public void swim() {
+        System.out.println("El pato puede nadar");
+    }
+
+    public void fly() {
+        System.out.println("El pato puede volar");
+    }
+
+    public void display() {
+        System.out.println("Hola soy un Pato Corriente :)");
+    }
+}
+
+class MallardDuck extends Duck {
+    @Override 
+    public void quack() {
+        System.out.println("El Pato Real hace QUACK");
+    }
+
+    @Override 
+    public void swim() {
+        System.out.println("El Pato Real puede nadar");
+    }
+
+    @Override
+    public void fly() {
+        System.out.println("El Pato Real puede volar");
+    }
+    
+    @Override 
+    public void display() {
+        System.out.println("Hola soy un Pato Real :)");
+    }
+}
+
+class RedHeadDuck extends Duck {
+    @Override 
+    public void quack() {
+        System.out.println("El Pato Pelirrojo hace QUACK");
+    }
+
+    @Override 
+    public void swim() {
+        System.out.println("El Pato Pelirrojo puede nadar");
+    }
+
+    @Override 
+    public void fly() {
+        System.out.println("El Pato Pelirrojo puede volar");
+    }
+
+    @Override 
+    public void display() {
+        System.out.println("Hola soy un Pato Pelirrojo :)");
+    }
+}
+
+class RubberDuck extends Duck {
+    @Override 
+    public void quack() {
+        System.out.println("El Pato de Hule hace SQUEAK");
+    }
+
+    @Override 
+    public void swim() {
+        System.out.println("El Pato de Hule puede nadar");
+    }
+
+    @Override 
+    public void fly() {
+    }
+
+    @Override 
+    public void display() {
+        System.out.println("Hola soy un Pato de Hule :)");
+    }
+}
+
+class DecoyDuck extends Duck {
+    @Override 
+    public void quack() {
+    }
+
+    @Override 
+    public void swim() {
+        System.out.println("El Pato de Sebo puede flotar");
+    }
+
+    @Override 
+    public void fly() {
+    }
+
+    @Override 
+    public void display() {
+        System.out.println("Hola soy un Pato de Sebo :)");
+    }
+}
